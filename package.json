@@ -1,0 +1,32 @@
+{
+  "name": "react-todo",
+  "version": "1.0.0",
+  "description": "full stack react todo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chououtside/todo.git"
+  },
+  "author": "alex chou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chououtside/todo/issues"
+  },
+  "homepage": "https://github.com/chououtside/todo#readme",
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.14.0",
+    "webpack": "^1.13.2"
+  }
+}
