@@ -11,9 +11,11 @@ const TodoList = React.createClass({
 
   handleSubmit (event) {
     const enterKey = 13
+    let todoArray = this.state.items
 
     if (event.which === enterKey) {
-      console.log('you hit enter! and your string is ' + event.target.value)
+      todoArray.push(event.target.value)
+      this.setState({items: todoArray})
     }
   },
 
