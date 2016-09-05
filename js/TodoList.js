@@ -16,7 +16,14 @@ const TodoList = React.createClass({
     if (event.which === enterKey) {
       todoArray.push(event.target.value)
       this.setState({items: todoArray})
-    }
+      event.target.value = ''
+    } 
+  },
+
+  removeItem (item) {
+    let todoArray = this.state.items
+    todoArray.splice(todoArray.indexOf(item), 1)
+    this.setState({items: todoArray})
   },
 
   render () {
@@ -26,7 +33,7 @@ const TodoList = React.createClass({
         <input type='text' onKeyDown={this.handleSubmit} />
 
         {this.state.items.map((item, index) => {
-          return <TodoItem item={item} key={index} />
+          return <TodoItem item={item} key={index} remove={this.removeItem} />
         })}
       </div>
     )
